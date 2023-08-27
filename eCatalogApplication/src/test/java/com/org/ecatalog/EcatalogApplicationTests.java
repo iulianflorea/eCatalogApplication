@@ -1,10 +1,10 @@
-package com.example.eCatalogApplication;
+package com.org.ecatalog;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ECatalogApplicationTests {
+class EcatalogApplicationTests {
 
 	@Test
 	void contextLoads() {
