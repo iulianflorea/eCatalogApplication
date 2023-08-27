@@ -1,0 +1,44 @@
+<div class="container-student">
+  <div class="student-form-container">
+    <div class="title-form">
+      <h1>Register a new student</h1>
+    </div>
+    <div>
+      <form [formGroup]="studentForm" (ngSubmit)="saveStudent()" class="student-form">
+        <mat-form-field>
+          <mat-label>First name</mat-label>
+          <input matInput formControlName="firstName"/>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Last name</mat-label>
+          <input matInput formControlName="lastName"/>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>CNP</mat-label>
+          <input matInput formControlName="cnp"/>
+        </mat-form-field>
+<!--        <mat-form-field>-->
+<!--          <mat-label>School Class</mat-label>-->
+<!--          <input matInput formControlName="schoolClass"/>-->
+<!--        </mat-form-field>-->
+        <mat-form-field>
+          <mat-label>School Class</mat-label>
+          <mat-select [(ngModel)]="schoolClassIdSelected" [ngModelOptions]="{standalone: true}">
+            <mat-option *ngFor="let schoolClass of schoolClassList" [value]="schoolClass.id">
+              {{schoolClass.normalizedSchoolClassName}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+<!--        <mat-form-field>-->
+<!--          <mat-label>School Class Id</mat-label>-->
+<!--          <input matInput formControlName="schoolClassId"/>-->
+<!--        </mat-form-field>-->
+<!--        <mat-form-field>-->
+<!--          <mat-label>Profile picture URL</mat-label>-->
+<!--          <input matInput formControlName="profilePicture"/>-->
+<!--        </mat-form-field>-->
+        <button mat-raised-button type="submit" color="primary">Save</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.class-form-container {
+  color: white;
+  background-color: #e0c879;
+  width: 350px;
+  height: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.class-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-class {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

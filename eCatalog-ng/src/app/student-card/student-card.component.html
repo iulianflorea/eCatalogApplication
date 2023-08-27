@@ -1,0 +1,20 @@
+<div class="student-card">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{student.firstName + " " + student.lastName}}</mat-card-title>
+      <mat-card-subtitle>{{student.schoolClassDto?.normalizedSchoolClassName}}</mat-card-subtitle>
+      <mat-card-subtitle>{{ student.schoolClassDto?.classLevel}}</mat-card-subtitle>
+      <mat-card-subtitle>{{ student.schoolClassDto?.startYear}}</mat-card-subtitle>
+    </mat-card-header>
+    <img class="student-image"
+         mat-card-image
+         src="../../assets/student2.png"/>
+
+    <div class="delete-button">
+      <button mat-fab color="warn" aria-label="Example icon button with a delete icon"(click)="deleteStudent(student)" >
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </mat-card>
+
+</div>

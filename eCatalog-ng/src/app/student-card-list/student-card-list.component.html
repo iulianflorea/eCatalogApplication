@@ -1,0 +1,13 @@
+<div class="student-list-container">
+    <div>
+        <h1>Our Students</h1>
+        <button mat-raised-button routerLink="/new-student" color="primary">Register a new student</button>
+    </div>
+    <div class="student-cards">
+        <app-student-card *ngFor="let s of studentCardList" [student]="s"></app-student-card>
+
+    </div>
+  <div>
+
+  </div>
+</div>

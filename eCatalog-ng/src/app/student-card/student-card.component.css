@@ -1,0 +1,13 @@
+.student-card{
+    max-width: 300px;
+    margin: 20px;
+}
+.student-image{
+    height: 300px;;
+}
+
+.delete-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

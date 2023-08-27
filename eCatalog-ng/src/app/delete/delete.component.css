@@ -1,0 +1,23 @@
+.delete-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delete-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delete-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delete-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

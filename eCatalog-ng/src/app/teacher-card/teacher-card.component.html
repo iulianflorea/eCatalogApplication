@@ -1,0 +1,19 @@
+<div class="teacher-card">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{teacher.firstName + " " + teacher.lastName}}</mat-card-title>
+      <mat-card-subtitle>{{ teacher.subject }}</mat-card-subtitle>
+    </mat-card-header>
+    <img class="teacher-image"
+         mat-card-image
+         src="../../assets/teacher.jpg"/>
+
+    <div class="delete-button">
+      <button mat-fab color="warn"   (click)="deleteTeacher(teacher)" >
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+
+  </mat-card>
+
+</div>

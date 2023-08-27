@@ -1,0 +1,16 @@
+<div class="delete-container">
+  <div>
+    <div class="delete-title">
+      <h1>Delete</h1>
+    </div>
+    <div class="delete-form">
+      <form class="delete-form" [formGroup]="deleteForm" (ngSubmit)="deletetTeacherByCnp()">
+        <mat-form-field>
+          <mat-label>CNP</mat-label>
+          <input matInput formControlName="cnp"/>
+        </mat-form-field>
+        <button mat-raised-button type="submit" color="primary">Delete</button>
+      </form>
+    </div>
+  </div>
+</div>

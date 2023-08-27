@@ -1,0 +1,13 @@
+.teacher-card{
+    max-width: 400px;
+    margin: 20px;
+}
+.teacher-image{
+    height: 300px;;
+}
+
+.delete-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

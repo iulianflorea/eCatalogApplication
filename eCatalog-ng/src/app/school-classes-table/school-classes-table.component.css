@@ -1,0 +1,12 @@
+.school-classes-container{
+  color: white;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.school-classes-table {
+  padding: 25px;
+    width: 50%;
+}
