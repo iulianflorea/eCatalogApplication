@@ -26,6 +26,9 @@ public class StudentService {
         this.studentMapper = studentMapper;
     }
 
+    public Student save(Student student) {
+        return studentRepository.save(student);
+    }
 
     public StudentDto create(StudentCreateDto createDto) {
         Student toBeSaved = studentMapper.toEntity(createDto);
@@ -44,13 +47,24 @@ public class StudentService {
         return studentMapper.toDtoList(studentsList);
 
     }
+
     public List<StudentCardDto> getStudentCards() {
         return studentMapper.toStudentCardDtoList(studentRepository.findAll());
-}
+    }
+
+
+    public StudentDto update(Long id, StudentCreateDto studentCreateDto) {
+        Student studentToBeSaved = studentRepository.findById(id).orElseThrow();
+        studentToBeSaved.setSchoolClassId(studentCreateDto.getSchoolClassId());
+        studentToBeSaved.setLastName(studentCreateDto.getLastName());
+        studentToBeSaved.setFirstName(studentCreateDto.getFirstName());
+        Student studentSaved = studentRepository.save(studentToBeSaved);
+        return studentMapper.toDto(studentSaved);
+    }
 
     public void deleteById(Long id) {
         Optional<Student> student = studentRepository.findById(id);
-        if(student.isPresent()) {
+        if (student.isPresent()) {
             student.get().setSchoolClass(null);
             studentRepository.delete(student.get());
         }
