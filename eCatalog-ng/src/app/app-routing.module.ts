@@ -27,6 +27,7 @@ const routes: Routes = [
   {path: "add-classes", component: SchoolClassesFormComponent},
   {path: "home" , component: HomeComponent}
 
+
 ];
 
 @NgModule({

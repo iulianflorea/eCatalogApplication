@@ -47,7 +47,7 @@ import {MatSelectModule} from "@angular/material/select";
     UserRegisterPageComponent,
     DeleteComponent,
     SchoolClassesFormComponent,
-    HomeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
