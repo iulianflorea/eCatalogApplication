@@ -1,9 +1,15 @@
-.teacher-card{
-    max-width: 400px;
-    margin: 20px;
+.teacher-card {
+  max-width: 400px;
+  margin: 20px;
+  transition: transform 0.3s;
 }
-.teacher-image{
-    height: 300px;;
+
+.teacher-card:hover {
+  transform: scale(1.2);
+}
+
+.teacher-image {
+  height: 300px;;
 }
 
 .delete-button {

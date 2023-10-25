@@ -1,9 +1,15 @@
-.student-card{
-    max-width: 300px;
-    margin: 20px;
+.student-card {
+  max-width: 300px;
+  margin: 20px;
+  transition: transform 0.3s;
 }
-.student-image{
-    height: 300px;;
+
+.student-card:hover{
+  transform: scale(1.2);
+}
+
+.student-image {
+  height: 300px;;
 }
 
 .delete-button {
