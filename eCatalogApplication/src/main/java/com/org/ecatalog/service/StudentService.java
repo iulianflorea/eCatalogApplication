@@ -37,6 +37,10 @@ public class StudentService {
 
     }
 
+    public void nuFaceNimic() {
+
+    }
+
     public List<StudentDto> getAll() {
         List<Student> students = studentRepository.findAll();
         return studentMapper.toDtoList(students);
