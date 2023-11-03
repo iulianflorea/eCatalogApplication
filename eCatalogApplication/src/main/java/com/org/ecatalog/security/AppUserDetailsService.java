@@ -13,8 +13,6 @@ public class AppUserDetailsService implements UserDetailsService {
 
     private final AppUserRepository appUserRepository;
 
-    //username vine de la spring,dar pentru noi username-ul este reprezentat de field-ul email
-    //vezi AppUser.getUsername()
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return appUserRepository.findByEmail(username);

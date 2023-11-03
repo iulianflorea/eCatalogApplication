@@ -14,7 +14,6 @@ public class AppUserService {
 
     private final AppUserRepository appUserRepository;
 
-    //creeaza un user nou
     public AppUser createUser(AppUserCreateDto appUserCreateDto) {
         AppUser user = new AppUser();
         user.setEmail(appUserCreateDto.getEmail());
@@ -23,7 +22,7 @@ public class AppUserService {
         return appUserRepository.save(user);
 
     }
-    // folosim metoda ca sa intelegem cum functioneaza spring in spate
+
     public Boolean checkCredentials(AppUserCreateDto createDto) {
         AppUser user = appUserRepository.findByEmail(createDto.getEmail());
         if(user == null) {
